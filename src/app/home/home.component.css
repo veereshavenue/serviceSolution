@@ -1,0 +1,13 @@
+.right-div {
+    background: #124375;
+}
+
+.product-title h3 {
+    background: #124375;
+    color: #fff;
+    width: auto;
+    float: left;
+    padding: 5px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

@@ -1,0 +1,68 @@
+
+.form-control.categ-lft1 {
+	width: 49%;
+	float: left;
+}
+.form-control.categ-rgt1 {
+	width: 49%;
+	float: right;
+}
+.transition{
+    transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+}
+
+/* --------- Simple Zoom Effects ----------*/
+.product-div1{
+    position:relative;
+    overflow:hidden;
+}
+.product-div1:hover img{
+    transform: scale(1.1);
+}
+img{
+    transform: scale(1);
+}
+
+/* --------- Text View ----------*/
+.product-div2{
+    position:relative;
+    overflow:hidden;
+}
+.product-div2:hover .text-view{
+     top: 50%;
+     opacity:1;
+}
+.product-div2:hover img{
+    opacity:.8;
+}
+
+.space {
+	margin-top: 12px;
+}
+.advertise-box
+{
+	width:100%;
+	float:left;
+	margin-bottom:2.5em;
+}
+.bottom-index-p
+{
+    float:left;
+    width:100%;
+}
+.bottom-index-p p {
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    color: #484848;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.content-index-area p strong {
+    color: #000;
+}
+

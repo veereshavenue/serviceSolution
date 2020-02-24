@@ -1,0 +1,96 @@
+ <p>industrial-ro works!</p>
+
+<div class="container">
+    <h2>Small Modal</h2>
+    Trigger the modal with a button
+     <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Small Modal</button>
+  
+    <!-- Modal -->
+     <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <form>
+          <div class="form-group">
+            <div class="col-sm-12">
+               <input type="text" class="form-control" id="txtName" required="" placeholder="Enter Name" name="name">
+           </div>
+        </div>
+
+         <div class="form-group">
+            <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="txtName" required="" placeholder="Email Id" name="name">
+           </div>
+           <div class="col-sm-6">
+                                  <input type="text" class="form-control" id="txtName" required="" placeholder="Mob No" name="name">
+           </div>
+          </div>
+
+          <div class="form-group">
+          <div class="col-sm-6">
+                                  <select class="form-control" required="" id="ddlState" name="state"><option value=""> Select State </option><option value="8">Andhra Pradesh</option><option value="9">Arunachal Pradesh</option><option value="10">Assam</option><option value="2">Bihar</option><option value="11">Chhattishgarh</option><option value="6">Delhi</option><option value="17">Goa</option><option value="12">Gujarat</option><option value="13">Haryana</option><option value="14">Himachal Pradesh</option><option value="16">Jamu &amp; Kashmir</option><option value="4">JHARKHAND</option><option value="5">Karnataka</option><option value="7">Kerala</option><option value="15">Madhya Pradesh</option><option value="3">Maharashtra</option><option value="18">Manipur</option><option value="19">Meghalaya</option><option value="20">Mizoram</option><option value="21">Nagaland</option><option value="22">Odisha</option><option value="23">Puducherry</option><option value="24">Punjab</option><option value="25">Rajashthan</option><option value="26">Sikkim</option><option value="27">Tamilnadu</option><option value="28">Telangana</option><option value="29">Tripura</option><option value="1">Uttar Pradesh</option><option value="30">Uttarakhand</option><option value="31">West Bengal</option></select>
+                              </div>
+                    <div class="col-sm-6">
+                    <select class="form-control" required="" id="ddlCity" name="city">
+                                      <option value="">Select City</option>
+                                  </select>
+                                  </div>
+        <div class="col-sm-12">
+       
+                                  <textarea class="form-control" id="txtAddress" placeholder="Full Address" required="" name="address" rows="3"></textarea>
+                            
+                              </div>
+           <div class="form-group">
+           <div class="col-sm-6">
+           <select class="form-control" required="" id="ddlBrand" name="brand"><option value=""> Select Brand</option><option value="7">Aqua Grand</option><option value="3">Aquafresh</option><option value="2">Aquaguard</option><option value="9">Aquasure</option><option value="1">Kent</option><option value="5">LivPure</option><option value="13">Marvella ro</option><option value="12">Nasaka</option><option value="14">Other</option><option value="6">PureIt</option><option value="11">Ro Water Purifier</option><option value="10">Zero B</option></select>
+           </div>
+           <div class="col-sm-6">
+           <select class="form-control" required="" id="ddlModel" name="model">
+                                      <option value="">Select Model</option>
+                                  </select>
+           </div>
+           </div>
+                              
+            </div>
+
+           <div class="form-group">
+                              <div class="col-sm-6">
+                              <select class="form-control" required="" id="ddlModel" name="model">
+                                      <option value="">Select Model</option>
+                                  </select>
+                              </div>
+                              <div class="col-sm-6">
+                              <select class="form-control" name="query_for" required="" id="ddlServiceFor">
+                                      <option value="">Query For</option>
+                                      <option value="Routine Service">Routine Service</option>
+                                      <option value="RO Repair">RO Repair</option>
+                                      <option value="AMC / Maintenance">AMC / Maintenance</option>
+                                      <option value="RO Installation">RO Installation</option>
+                                  </select>
+                              </div>
+           </div>
+
+          <div class="form-group">
+                                                    <div class="col-sm-6">
+                                                    <select name="unit" class="form-control" id="ddlUnit">
+                                                        <option value="1">Single Unit</option>
+                                                        <option value="2">Multiple Unit</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                <input type="date" name="v_date" id="txtDate" required="" class="form-control" title="Enter Visit Date" onchange="checkDate(this.value)"></div>
+                                                
+                                                
+          </div>
+          
+          <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-4">
+                                  <input type="submit" class="btn btn-info" name="submit" value="SUBMIT" style="letter-spacing:2px;">
+              </div>
+          </div>
+    </form>
+            
+        </div>
+    </div>
+    </div>
+</div>
+

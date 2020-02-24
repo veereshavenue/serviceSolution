@@ -1,0 +1,342 @@
+
+  <div class="row">
+    <div class="col-md-8">
+    <div class="carousel slide" id="slider" data-ride="carousel">
+      <!--indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/images/3.jpg">
+          <div class="carousel-caption">
+            <h4>Welcome</h4>
+            <p>Travel! Enjoy!</p>
+          </div>
+        </div>
+    
+        <div class="carousel-item" id="slide2">
+          <img src="/assets/images/6.jpg">
+          <div class="carousel-caption">
+            <h4>Welcome</h4>
+            <p>Travel! Enjoy!</p>
+          </div>
+        </div>
+    
+        <div class="carousel-item" id="slide3">
+          <img src="/assets/images/6.jpg">
+          <div class="carousel-caption">
+            <h4>Welcome</h4>
+            <p>Travel! Enjoy!</p>
+          </div>
+        </div>
+    
+      </div>
+      <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+     
+  </div>
+
+      <div class="col-md-4 right-div">
+        <div class="h">
+            <div class="form-text">
+                <h3>Book Your Service Request</h3>
+            </div>
+
+            <form method="post" action="#" name="myForm">
+              
+              <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" placeholder="Enter Email ID" id="txtEmail1" required="" name="email">
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Enter Mobile No." id="txtMobile1" name="mobile" maxlength="10" pattern="[56789][0-9]{9}" required="">
+                </div>
+              </div>
+
+              <div class="row">
+                <div class=" form-group col-sm-6">
+                    <select class="form-control" required="" id="ddlState1" name="state">
+                        <option value="">Select State</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-6">
+                    <select class="form-control" required="" id="ddlCity1" name="city">
+                        <option value="">Select City</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <!-- <div class="col-sm-12"> -->
+                  <textarea class="form-control" id="txtAddress1" placeholder="Full Address" required="" name="address" rows="2"></textarea>
+              <!-- </div> -->
+          </div>
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+                <select class="form-control" required="" id="ddlBrand1" name="brand">
+                    <option value="">Select Brand</option>
+                </select>
+            </div>
+            <div class="form-group col-sm-6">
+                <select class="form-control" required="" id="ddlModel1" name="model">
+                    <option value="">Select Model</option>
+                </select>
+            </div>
+        </div>
+               
+        <div class="row">
+          <div class="form-group col-md-6">
+              <select class="form-control" name="ro_status" required="" id="ddlStatus">
+                  <option value="">RO Status</option>
+                  <option value="In Warranty">In Warranty</option>
+                  <option value="In AMC Plans">In AMC Plans</option>
+                  <option value="Out Of AMC/ Warranty">Out Of AMC/ Warranty</option>
+                  <option value="New RO Purchase">New RO Purchase</option>
+              </select>
+          </div>
+          <div class="form-group col-md-6">
+              <select class="form-control" name="query_for" required="" id="ddlServiceFor">
+                  <option value="">Query For</option>
+                  <option value="Routine Service">Routine Service</option>
+                  <option value="RO Repair">RO Repair</option>
+                  <option value="AMC / Maintenance">AMC / Maintenance</option>
+                  <option value="RO Installation">RO Installation</option>
+              </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-6">
+            <select name="unit" class="form-control m-bot15" id="ddlUnit">
+              <option value="Single Unit">Single Unit</option>
+              <option value="Multiple Unit">Multiple Unit</option>
+            </select>
+          </div>
+          <div class=" form-group col-md-6">
+            <input type="date" name="v_date" id="txtDate1" required="" class="form-control" title="Enter Visit Date" onchange="checkDate(this.value)">                        
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-4">
+            <input type="submit" class="btn btn-info btn-md" name="submit" value="SUBMIT" style="letter-spacing:2px;">
+          </div>
+        </div>
+    </form>
+
+    </div>
+     </div>   
+ </div> 
+<hr>
+<br>
+
+<div class="row">
+  <div class="col-md-3 col-sm-6">
+    <div class="teaser text-center">
+      <div class="size_small">
+          <img src="../../assets/images/shipping.png" width="50%">
+      </div>
+      <h4 style="color:blue;"><b>Free Shipping</b></h4><br>
+      <p align="center">
+          Online shopping from a great selection at FREE Shipping
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="teaser text-center">
+      <div class="size_small">
+        <img src="../../assets/images/money-back-guarantee-icon.png" width="50%">
+      </div>
+      <h4 style="color:blue;"><b>Money Back Guarantee</b></h4>
+      <p align="center">
+          Worry-free shopping, we gives you satisfaction guarantee
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6">
+    <div class="teaser text-center">
+      <div class="round size_small">
+        <img src="../../assets/images/onstallation.png" width="50%">
+      </div>
+      <h4 style="color:blue;"><b>Free Installation</b></h4><hr>
+      <p align="center">
+        We offer free Ro Water Purifier Installation Services
+      </p>
+    </div>
+ </div>
+
+ <div class="col-md-3 col-sm-6">
+  <div class="teaser text-center">
+    <div class="round size_small">
+      <img src="../../assets/images/service.png" width="50%">
+    </div>
+    <h4 style="color:blue;"><b>Service Within 24 Hour</b></h4>
+    <p align="center">
+      24X7 services are available to customers within Aquagaurd Ro Customer India
+    </p>
+  </div>
+  
+</div>
+
+    
+</div>
+
+<div class="row">
+  <h1 align="center" style="color:#07AFF3; margin: auto;">Ro Service Solution</h1>
+  <p>
+    Ro Service solution India is one of the leading water purifier service provider company in India, which also interest in selling RO products at great price listings. The company was founded by Ro Care Servicing Center in 2010, initiated its service from Bihar regions and now contributing to different major cities of India. The reason why we have been able to recognize ourselves in such a positive influence among customers is a remarkable quality of service. Our vision is to render quality of water purifier service to our customers at a short time. We have a collection of all famously known water purifier brands, serves to our customers depending on their orders. Ro Service Solution India deal in providing services for all RO type such as Domestic RO, Industrial RO, and Commercial RO. Annual Maintenance Cost (AMC) plans is the common thing that comes in every customer mind before installing any RO purifiers in consumption place. We provide the perfect solution for their queries and suggest the best AMC plan for them so that you can improve the longevity of the owned purifier.
+  </p>
+</div>
+<br>
+
+<div class="row">
+  <h1 align="center" style="color:#07AFF3; margin: auto;">Our Latest products</h1>
+</div><br>
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+       <img src="../../assets/images/ropurifier.jpg" width="100%" alt="RO Purifier">
+         <b> <h4 align="center" style="color:#07AFF3; margin: auto;">RO Purifier</h4></b>
+    </div>
+   
+    <div class="col-md-4 col-sm-6">
+      <img src="../../assets/images/kentsupreme.jpg" width="100%" alt="Kent Supreme">
+        <b> <h4 align="center" style="color:#07AFF3; margin: auto;">KENT SUPREME</h4></b>
+   </div>
+ 
+    <div class="col-md-4 col-sm-6">
+      <img src="../../assets/images/Aquafresh-domestic-ro.jpg" width="100%" alt="Aquafresh-domestic-ro">
+        <b> <h4 align="center" style="color:#07AFF3; margin: auto;">Aquafresh-domestic-ro</h4></b>
+   </div>
+ 
+    <div class="col-md-4 col-sm-6">
+      <img src="../../assets/images/pureit-water-purifier-370x300.jpg" width="100%" alt="pureit-water-purifier">
+        <b> <h4 align="center" style="color:#07AFF3; margin: auto;">pureit-water-purifier</h4></b>
+    </div>
+
+     <div class="col-md-4 col-sm-6">
+      <img src="../../assets/images/rowater-purifier.jpg" width="100%" alt="RO pureit-water-purifier">
+        <b> <h4 align="center" style="color:#07AFF3; margin: auto;">RO WATER PURIFIERS</h4></b>
+    </div>
+  
+    <div class="col-md-4 col-sm-6">
+      <img src="../../assets/images/home-water-softness.jpg" width="100%" alt="Home Water Softeners">
+        <b> <h4 align="center" style="color:#07AFF3; margin: auto;">HOME WATER SOFTENERS</h4></b>
+    </div>
+  </div>
+  <br>
+
+ <div class="row">
+    <h1 align="center" style="color:#07AFF3; margin: auto;">We provide our services to following areas</h1>
+ </div><br>
+
+<div class="row">
+  <div class="col-md-4 col-sm-6">
+     <img src="../../assets/images/commercial-water-purifier-500x500.jpg" width="100%" alt="RO Commercial Service">
+       <b> <h4 align="center" style="color:#07AFF3; margin: auto;">RO COMMERICAL SERVICE</h4></b>
+  </div>
+
+  <div class="col-md-4 col-sm-6">
+    <img src="../../assets/images/commercial-ro-plant-500-ltr-500x500.png" width="100%" alt="500 LPH Commercial RO Plant">
+      <b> <h4 align="center" style="color:#07AFF3; margin: auto;">500 LPH Commercial RO Plant</h4></b>
+ </div>
+
+ <div class="col-md-4 col-sm-6">
+   <img src="../../assets/images/1000-lph-commercial-ro-water-plant-500x500.jpg" width="100%" alt="1000 LPH Commercial">
+     <b> <h4 align="center" style="color:#07AFF3; margin: auto;">1000 LPH Commercial</h4></b>
+ </div>
+
+  <div class="col-md-4 col-sm-6">
+    <img src="../../assets/images/71ZgS1bVEnL._SL1500_.jpg" width="100%" alt="WaterQ RO-25 LPH Commercial RO">
+      <b> <h4 align="center" style="color:#07AFF3; margin: auto;">WaterQ RO-25 LPH Commercial RO</h4></b>
+  </div>
+
+  <div class="col-md-4 col-sm-6">
+    <img src="../../assets/images/31TXX2nZ0lL.jpg" width="100%" alt="Luzon Dzire 100 LPH/100 Litre">
+     <b> <h4 align="center" style="color:#07AFF3; margin: auto;">Luzon Dzire 100 LPH/100 Litre</h4></b>
+  </div>
+
+ <div class="col-md-4 col-sm-6">
+    <img src="../../assets/images/441_5_.jpg" width="100%" alt="Industrial Reverse Osmosis System">
+    <b> <h4 align="center" style="color:#07AFF3; margin: auto;">Industrial Reverse Osmosis System</h4></b>
+ </div>
+
+</div>
+ <br/>
+
+ <div class="row">
+  <h1 align="center" style="color:red; margin: auto;">Ro Service Solution</h1>
+</div>
+<div class="row">
+  <div class="col-md-2">1</div>
+  <div class="col-md-2">2</div>
+  <div class="col-md-2">3</div>
+  <div class="col-md-2">4</div>
+  <div class="col-md-2">5</div>
+  <div class="col-md-2">6</div>
+
+</div>
+
+
+ 
+<br />
+<div class="row">
+  <div class="col-md-3 col-sm-2"> 
+    <h2><a href="http://roservicesolution.com/"><img src="../../assets/images/ro-logo.gif" alt=" " width="105%"></a></h2>
+    <p>Ro Service Solution Is One Of The Trusted &amp; Independent Water Purifier Service Provider In Bihar. At Ro Service Solution, We Offer A Complete Solution Such As RO Installation, RO Repair, Maintenance And AMC Service For Domestic, Commercial &amp; Industrial Water Purifier. We Deal In All Brands Of Water Purifier At A Relatively Low Price.</p>
+  </div>
+
+  <div class="col-md-3">
+    <h4>Useful Links</h4>
+    <a href="#">Home</a><br/>
+        <a href="aboutus.html"><i ></i>&nbsp;About Us</a><br/>
+        <a href="services.html">&nbsp;Our Services</a><br>
+        <a href="water-purifiers.html">&nbsp;All Products</a><br>
+        <a href="store-location.html">&nbsp;Store Locater</a><br>
+        <a href="contactus.html">&nbsp;Contact Us</a><br>
+        <a href="#">&nbsp;Water Purifier Company</a>
+    </div>
+  
+
+  <div class="col-md-3 col-sm-2">
+      <h4>Branch</h4><br />
+      <a href="patna.html">Patna</a><br />
+      <a href="muzaffarpur.html">Muzaffarpur</a><br />
+      <a href="darbhanga.html">Darbhanga</a><br />
+      <a href="samastipur.html">Samastipur</a><br />
+      <a href="mokama.html">Mokama</a><br />
+      <a href="gaya.html">Gaya</a><br />
+      <a href="bakhtiyarpur.html">Bakhtiyarpur</a>
+  </div>
+
+  <div class="col-md-3">
+    <h4>Contact Us</h4>
+    <a href="#">Location :</a>
+      <p>
+        Mayur bihar road no-23 near dominos pizza
+        New delhi,110091
+      </p>
+    <a href="#">Phone Number :</a>
+       <p>+91-1800-1038-583,  +91-1800-1038-583</p>
+    <a href="#">Email :</a>
+       <p><a href="mailto:nfo@roservicesolution.coim">nfo@roservicesolution.coim</a></p>
+  </div>
+  
+</div>  
+

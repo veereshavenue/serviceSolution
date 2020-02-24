@@ -1,0 +1,20 @@
+.container-fluid {
+    padding: 0px;
+}
+.page-header {
+    padding: 10px 0px;
+    background: #124375;
+}
+
+.page-bottom {
+    background: linear-gradient(to right, #fff , #d4faff);
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 4px 30px;
+}
+
+.header-top-right {
+    font-size: 14px;
+    color: white;
+}
